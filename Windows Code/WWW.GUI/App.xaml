@@ -1,0 +1,16 @@
+﻿<Application x:Class="WifiTOTP.GUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WildWildWifi.GUI"
+               xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.xaml" />
+                <ResourceDictionary Source="/TotpTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="telefonicaFont">pack://application:,,,/Fonts/#Telefonica</FontFamily>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
