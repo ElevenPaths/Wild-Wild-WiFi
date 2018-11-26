@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildWildWifi.Service", "WWW.Service\WildWildWifi.Service.csproj", "{5F1506D2-192F-4726-90D9-6B40DCCA5537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildWildWifi.GUI", "WWW.GUI\WildWildWifi.GUI.csproj", "{23A50556-83D9-46A0-B793-5885A6350818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildWildWifi.Commons", "WWW.Commons\WildWildWifi.Commons.csproj", "{B92C345C-B737-48E8-AFA1-C93D8087464D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedWifi", "ManagedWifi\ManagedWifi.csproj", "{6AA425C9-EA6A-4B01-AAED-5FF122E8B663}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F1506D2-192F-4726-90D9-6B40DCCA5537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1506D2-192F-4726-90D9-6B40DCCA5537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1506D2-192F-4726-90D9-6B40DCCA5537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1506D2-192F-4726-90D9-6B40DCCA5537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A50556-83D9-46A0-B793-5885A6350818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A50556-83D9-46A0-B793-5885A6350818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A50556-83D9-46A0-B793-5885A6350818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A50556-83D9-46A0-B793-5885A6350818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B92C345C-B737-48E8-AFA1-C93D8087464D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B92C345C-B737-48E8-AFA1-C93D8087464D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B92C345C-B737-48E8-AFA1-C93D8087464D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B92C345C-B737-48E8-AFA1-C93D8087464D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AA425C9-EA6A-4B01-AAED-5FF122E8B663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA425C9-EA6A-4B01-AAED-5FF122E8B663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AA425C9-EA6A-4B01-AAED-5FF122E8B663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA425C9-EA6A-4B01-AAED-5FF122E8B663}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
