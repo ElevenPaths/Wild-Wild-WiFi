@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="true"
+    android:background="@color/mainViewBackground"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button_reconnect"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/reconnect"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_wild_wifi"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/wildwildwifi_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_totp"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="12dp"
+        app:cardBackgroundColor="@color/cardBackground"
+        app:cardCornerRadius="@dimen/activity_horizontal_margin"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_wild_wifi">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardBackground">
+
+            <TextView
+                android:id="@+id/text_totp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/scanQRButton"
+        android:text="@string/scan_qr"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="110"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/countdown_expires"
+        app:layout_constraintStart_toStartOf="@+id/guideline_center" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <TextView
+        android:id="@+id/countdown_expires"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="2dp"
+        android:text="Expira en"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_center"
+        app:layout_constraintTop_toBottomOf="@+id/card_totp" />
+
+    <TextView
+        android:id="@+id/countdown_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="segundos"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_countdown"
+        app:layout_constraintStart_toEndOf="@+id/text_countdown" />
+
+
+</android.support.constraint.ConstraintLayout>

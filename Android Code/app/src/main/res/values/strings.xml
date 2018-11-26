@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Wild Wild WiFi</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="scan_qr">Scan QR</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="countdown_label">Countdown</string>
+    <string name="totp_code">TOTP Key</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
