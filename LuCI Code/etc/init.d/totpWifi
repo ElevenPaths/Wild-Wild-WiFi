@@ -1,0 +1,30 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2007 OpenWrt.org
+ 
+START=10
+DAEMON_NAME='totpWifi'
+SCRIPT_NAME='/root/changeWifiPass.sh'
+
+start() {
+	pid=`cat /var/run/$DAEMON_NAME.pid 2> /dev/null`
+	if [[ $pid ]]; then
+		isNotExists=`kill -0 $pid`
+		if [[ $isNotExists ]]; then
+			$SCRIPT_NAME >/var/log/$DAEMON_NAME.log & echo $! > /var/run/$DAEMON_NAME.pid &
+		else
+			echo $DAEMON_NAME ' daemon is running'
+		fi
+	else
+		$SCRIPT_NAME >/var/log/$DAEMON_NAME.log & echo $! > /var/run/$DAEMON_NAME.pid &
+	fi
+}               
+ 
+stop() {
+	pid=`cat /var/run/$DAEMON_NAME.pid 2> /dev/null`
+	if [[ $pid ]]; then
+		kill -9 $pid 2>/dev/null
+		rm -f /var/run/$DAEMON_NAME.pid
+	else
+		kill -9 $(pgrep -f $SCRIPT_NAME) 2>/dev/null
+	fi
+}

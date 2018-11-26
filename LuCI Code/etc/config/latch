@@ -1,0 +1,4 @@
+config global 'global'
+
+config paired_user 'root'
+

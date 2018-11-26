@@ -1,0 +1,5 @@
+<%+cbi/valueheader%>
+<% write(luci.sys.exec("qrencode 'otpauth://totp/totpwifi?ssid=" .. self.sid .."&secret=" .. self.s .. "&period=" .. self.p .. "&pshk=" .. self.pshk .."'"):gsub("^<%?xml.*%?>\n","")) %>
+<%=self.tmp%>
+
+<%+cbi/valuefooter%>
